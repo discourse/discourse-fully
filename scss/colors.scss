@@ -1,0 +1,156 @@
+#main-outlet-wrapper .sidebar-container,
+.sidebar-footer-wrapper .sidebar-footer-container,
+.sidebar-hamburger-dropdown .sidebar-footer-wrapper .sidebar-footer-container,
+.sidebar-hamburger-dropdown,
+.hamburger-panel .revamped.menu-panel.slide-in {
+  background-color: var(--sidebar-color);
+}
+
+.chat-message-info__username__name {
+  color: var(--primary);
+}
+
+.sidebar-section-wrapper
+  .sidebar-section-header-wrapper
+  .btn.dropdown-select-box-header:focus,
+.sidebar-section-wrapper
+  .sidebar-section-header-wrapper
+  .sidebar-section-header-button:focus,
+.discourse-no-touch
+  .sidebar-section-wrapper
+  .sidebar-section-header-wrapper
+  .btn.dropdown-select-box-header:hover,
+.discourse-no-touch
+  .sidebar-section-wrapper
+  .sidebar-section-header-wrapper
+  .sidebar-section-header-button:hover,
+.sidebar-section-link-wrapper
+  .sidebar-section-link-hover
+  .sidebar-section-hover-button:hover,
+.sidebar-section-link-wrapper
+  .sidebar-section-link-hover
+  .sidebar-section-hover-button:focus {
+  background: transparent;
+  .d-icon {
+    color: var(--bright-text);
+  }
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.span,
+.sidebar-section-wrapper .sidebar-section-header-caret svg,
+.sidebar-section-wrapper .sidebar-section-header,
+.sidebar-more-section-links-details .sidebar-more-section-links-details-summary,
+.sidebar-more-section-links-details
+  .sidebar-more-section-links-details-summary
+  .sidebar-more-section-links-icon-wrapper,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.span .prefix-badge {
+  color: var(--dimmed-text);
+}
+
+.sidebar-more-section-links-details:focus-within,
+.sidebar-more-section-links-details:hover {
+  background: unset;
+}
+
+.sidebar-footer-wrapper .sidebar-footer-container:before,
+.sidebar-hamburger-dropdown
+  .sidebar-footer-wrapper
+  .sidebar-footer-container:before {
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 59, 59, 0),
+    var(--sidebar-color)
+  );
+}
+
+.sidebar-more-section-links-details
+  .sidebar-more-section-links-details-content {
+  background-color: var(--sidebar-color);
+  box-shadow: none;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link:focus,
+.sidebar-section-link-wrapper .sidebar-section-link:hover,
+.sidebar-more-section-links-details:hover,
+.discourse-no-touch
+  .sidebar-section-wrapper
+  .sidebar-section-header-wrapper:hover {
+  background: var(--sidebar-hover);
+  color: var(--bright-text);
+}
+
+.discourse-no-touch .btn-flat:hover,
+.discourse-no-touch .json-editor-btn-collapse:hover,
+.discourse-no-touch .btn-flat.btn-hover,
+.discourse-no-touch .btn-hover.json-editor-btn-collapse,
+.discourse-no-touch .btn-flat:hover .d-icon,
+.discourse-no-touch .json-editor-btn-collapse:hover .d-icon,
+.discourse-no-touch .btn-flat.btn-hover .d-icon,
+.discourse-no-touch .btn-hover.json-editor-btn-collapse .d-icon {
+  color: var(--bright-text);
+}
+
+.sidebar-section-link-wrapper {
+  .sidebar-section-link.active,
+  .sidebar-section-link--active {
+    color: var(--active-text);
+    background-color: var(--tertiary);
+    &:hover {
+      background-color: var(--sidebar-hover);
+      color: var(--primary);
+      .sidebar-section-link-prefix.icon {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.sidebar-section-link-wrapper
+  .sidebar-section-link.active
+  .sidebar-section-link-prefix.icon {
+  color: var(--active-text);
+}
+
+.sidebar-more-section-links-details
+  .sidebar-more-section-links-details-summary
+  .sidebar-more-section-links-icon-wrapper
+  .d-icon {
+  color: var(--dimmed-text);
+}
+
+// BORDERS
+.sidebar-more-section-links-details
+  .sidebar-more-section-links-details-content-secondary {
+  border-top: none;
+}
+
+.sidebar-footer-wrapper .sidebar-footer-container {
+  border-top: 1px solid var(--sidebar-border);
+}
+
+.sidebar-wrapper .sidebar-section-wrapper.sidebar-section-chat-channels {
+  border-top: 1px solid var(--sidebar-border);
+  padding-top: 0.5em;
+}
+
+.revamped.menu-panel {
+  border: none;
+}
+
+.has-full-page-chat:not(.discourse-sidebar) .full-page-chat {
+  border-left: none;
+  border-right: none;
+}
+
+body.has-sidebar-page #main-outlet-wrapper .sidebar-wrapper {
+  border-right: 1px solid var(--sidebar-border);
+  width: calc(var(--d-sidebar-width) - 1px);
+}
+
+.chat-composer {
+  background-color: var(--primary-50);
+  border: none;
+}

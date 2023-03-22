@@ -1,0 +1,14 @@
+:root {
+  --sidebar-color: var(--primary-50);
+  --sidebar-hover: var(--primary-200);
+  --bright-text: var(--primary);
+  --active-text: var(--secondary);
+  --dimmed-text: var(--primary-800);
+  --sidebar-border: var(--primary-200);
+  --sidebar-online: var(--success);
+}
+
+.sidebar-wrapper .sidebar-sections {
+  --scrollbarThumbBg: rgba(var(--primary-rgb), 0.2);
+  --scrollbarWidth: 0.35em;
+}
