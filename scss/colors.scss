@@ -150,7 +150,7 @@ body.has-sidebar-page #main-outlet-wrapper .sidebar-wrapper {
   width: calc(var(--d-sidebar-width) - 1px);
 }
 
-.chat-composer {
-  background-color: var(--primary-50);
+.chat-composer__inner-container {
+  background-color: var(--primary-100);
   border: none;
 }
