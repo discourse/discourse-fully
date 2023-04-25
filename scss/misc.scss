@@ -13,13 +13,6 @@ img.avatar {
   width: 35px;
 }
 
-// INPUT
-.chat-message-avatar .chat-composer .chat-composer-input {
-  padding: 0.35rem 0.5rem;
-  font-size: var(--font-up-1);
-  height: 35px !important;
-}
-
 body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
   grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr);
   #main-outlet {

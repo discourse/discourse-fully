@@ -63,6 +63,10 @@
   padding: 3px;
 }
 
-.chat-composer .chat-composer-input {
-  padding: 0.5rem;
+.chat-composer__outer-container {
+  padding-inline: 1rem;
+}
+
+.chat-composer__inner-container {
+  padding-inline: 0.5rem;
 }
