@@ -1,6 +1,6 @@
 // AVATAR
 img.avatar {
-  border-radius: 8px;
+  border-radius: var(--d-border-radius);
 }
 
 .chat-message
