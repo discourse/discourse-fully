@@ -1,7 +1,7 @@
 .sidebar-section-link-wrapper .sidebar-section-link,
 .sidebar-section-wrapper .sidebar-section-header-wrapper,
 .sidebar-more-section-links-details {
-  border-radius: 8px;
+  border-radius: var(--d-border-radius);
   padding: calc(var(--d-sidebar-row-vertical-padding) / 2)
     calc(var(--d-sidebar-row-horizontal-padding) / 2);
 }
@@ -18,7 +18,7 @@
   left: 0px;
   width: calc(100%);
   border: 1px solid var(--sidebar-border);
-  border-radius: 8px;
+  border-radius: var(--d-border-radius);
   background-color: var(--sidebar-color);
   overflow: hidden;
 }
@@ -42,7 +42,7 @@
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.image img {
-  border-radius: 4px;
+  border-radius: calc(var(--d-border-radius) / 2);
 }
 
 // FONT
