@@ -152,5 +152,24 @@ body.has-sidebar-page #main-outlet-wrapper .sidebar-wrapper {
 
 .chat-composer__inner-container {
   background-color: var(--primary-100);
-  border: none;
+  border-color: var(--primary-100);
+}
+
+.chat-composer-dropdown__trigger-btn .d-icon {
+  background-color: var(--primary-700);
+  color: var(--primary-100);
+}
+
+.no-touch .chat-composer-dropdown__trigger-btn:hover .d-icon {
+  background-color: var(--primary-800);
+  color: var(--primary-100);
+}
+
+.chat-composer__wrapper {
+  background-color: var(--secondary);
+}
+
+.chat-composer.is-focused .chat-composer__inner-container {
+  box-shadow: none;
+  border-color: var(--primary-300);
 }
