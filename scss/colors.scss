@@ -155,18 +155,18 @@ body.has-sidebar-page #main-outlet-wrapper .sidebar-wrapper {
   border-color: var(--primary-100);
 }
 
-.chat-composer .chat-composer-button__btn:not(:disabled) .d-icon {
+.chat-composer .chat-composer-dropdown__trigger-btn:not(:disabled) .d-icon {
   background-color: var(--primary-700);
   color: var(--primary-100);
 }
 
 .no-touch
   .chat-composer
-  .chat-composer-button__btn:not(:disabled):hover
+  .chat-composer-dropdown__trigger-btn:not(:disabled):hover
   .d-icon,
 .no-touch
   .chat-composer
-  .chat-composer-button__btn:not(:disabled):focus
+  .chat-composer-dropdown__trigger-btn:not(:disabled):focus
   .d-icon {
   background-color: var(--primary-800);
   color: var(--primary-100);
