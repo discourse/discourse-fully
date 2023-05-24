@@ -2,15 +2,13 @@
 .sidebar-section-wrapper .sidebar-section-header-wrapper,
 .sidebar-more-section-links-details {
   border-radius: var(--d-border-radius);
-  padding: calc(var(--d-sidebar-row-vertical-padding) / 2)
-    calc(var(--d-sidebar-row-horizontal-padding) / 2);
+  padding: 0 calc(var(--d-sidebar-row-horizontal-padding) / 2);
 }
 
 .sidebar-section-link-wrapper,
 .sidebar-section-wrapper .sidebar-section-header-wrapper,
 .sidebar-more-section-links-details {
-  margin: calc(var(--d-sidebar-row-vertical-padding) / 2)
-    calc(var(--d-sidebar-row-horizontal-padding) / 2);
+  margin: 0 calc(var(--d-sidebar-row-horizontal-padding) / 2);
 }
 
 .sidebar-more-section-links-details
@@ -44,10 +42,6 @@
 .sidebar-section-wrapper .sidebar-section-header-text {
   font-size: var(--font-down-1);
   text-transform: uppercase;
-}
-
-.sidebar-container {
-  font-size: var(--font-up-1);
 }
 
 .hamburger-panel .revamped .sidebar-footer-wrapper .sidebar-footer-container:before {
