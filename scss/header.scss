@@ -1,17 +1,12 @@
-@media screen and (min-width: 767px) {
-  .desktop-view .d-header-wrap::before {
-    content: "";
-    display: inline;
-    width: calc(var(--d-sidebar-width) - 1px);
-    height: 4em;
-    background-color: var(--sidebar-color);
-    border-bottom: 1px solid var(--sidebar-border);
-    border-right: 1px solid var(--sidebar-border);
-    position: absolute;
-  }
-  .header-sidebar-toggle {
-    display: none;
-  }
+.desktop-view .has-sidebar-page .d-header-wrap::before {
+  content: "";
+  display: inline;
+  width: calc(var(--d-sidebar-width) - 1px);
+  height: 4em;
+  background-color: var(--sidebar-color);
+  border-bottom: 1px solid var(--sidebar-border);
+  border-right: 1px solid var(--sidebar-border);
+  position: absolute;
 }
 
 .d-header {
