@@ -15,10 +15,7 @@
   .sidebar-more-section-links-details-content-wrapper {
   left: 0px;
   width: calc(100%);
-  border: 1px solid var(--sidebar-border);
-  border-radius: var(--d-border-radius);
   background-color: var(--sidebar-color);
-  overflow: hidden;
 }
 
 .sidebar-more-section-links-details .sidebar-more-section-links-details-content,
@@ -46,4 +43,22 @@
 
 .hamburger-panel .revamped .sidebar-footer-wrapper .sidebar-footer-container:before {
   top: -100%
+}
+
+.btn-flat.sidebar-more-section-links-details-summary, .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
+  padding: 0 calc(var(--d-sidebar-row-horizontal-padding)/2);
+}
+
+.sidebar-more-section-links-details-content {
+  border: 1px solid var(--primary-low);
+  border-radius: var(--d-border-radius);
+}
+
+.sidebar-more-section-links-details-content-footer {
+  border-top: 1px solid var(--primary-low);
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link-button {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
