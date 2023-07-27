@@ -5,21 +5,6 @@
 @import "header";
 @import "misc";
 
-// COMPONENTS
-.floating-search-input {
-  grid-column-start: 3;
-  @include breakpoint("medium") {
-    display: none;
-  }
-}
-
-.floating-search-input + .panel .header-dropdown-toggle.search-dropdown,
-.floating-search-input + .panel .search-menu {
-  @include breakpoint("medium") {
-    display: block;
-  }
-}
-
 .sidebar-theme-toggle__wrapper
   .sidebar-theme-toggle-dropdown.select-kit.is-expanded
   .select-kit-body {
