@@ -75,8 +75,8 @@
   .chat-user-avatar
   .chat-user-avatar__container::before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border: 1px solid var(--primary-medium);
   box-shadow: 0px 0px 0px 2px var(--secondary);
   border-radius: 100%;
@@ -110,7 +110,7 @@
 .chat-channel-title__avatar
   .chat-user-avatar.is-online
   .chat-user-avatar__container::before {
-    border: 1px solid var(--success);
+    border: 0px;
     background-color: var(--success);
 }
 
