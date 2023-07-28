@@ -25,8 +25,8 @@
   }
   &:hover .sidebar-section-link-prefix.image.active::before {
     box-shadow: 0px 0px 0px 2px var(--sidebar-hover) !important;
-    background-color: var(--sidebar-online) !important;
-    border-color: var(--sidebar-online) !important;
+    background-color: var(--presence-online) !important;
+    border-color: var(--presence-online) !important;
   }
 
   .sidebar-section-link-prefix.image::before {
@@ -44,16 +44,20 @@
 .sidebar-section-link {
   .sidebar-section-link-prefix.image.active::before {
     box-shadow: 0px 0px 0px 2px var(--sidebar-color);
-    border: 1px solid var(--sidebar-online);
+    border: 1px solid var(--presence-online);
     border-radius: 100%;
     display: inline;
     position: absolute;
     bottom: 3px;
     left: calc(var(--d-sidebar-section-link-prefix-width) + 3px);
-    background-color: var(--sidebar-online);
+    background-color: var(--presence-online);
   }
   &:hover .sidebar-section-link-prefix.image.active::before {
     box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
+  }
+  &:hover .sidebar-section-link-prefix.image::before {
+    box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
+    background-color: var(--sidebar-hover);
   }
 }
 
@@ -73,6 +77,9 @@
 
 .chat-channel-title__avatar
   .chat-user-avatar
+  .chat-user-avatar__container::before,
+.chat-message-creator__row
+  .chat-user-avatar
   .chat-user-avatar__container::before {
   content: "";
   width: 8px;
@@ -87,6 +94,30 @@
   background-color: var(--secondary);
 }
 
+.channels-list {
+  .chat-channel-title__avatar
+    .chat-user-avatar
+    .chat-user-avatar__container::before,
+  .chat-message-creator__row
+    .chat-user-avatar
+    .chat-user-avatar__container::before {
+    left: 25px;
+  }
+}
+
+.mobile-view {
+  .channels-list {
+    .chat-channel-title__avatar
+      .chat-user-avatar
+      .chat-user-avatar__container::before,
+    .chat-message-creator__row
+      .chat-user-avatar
+      .chat-user-avatar__container::before {
+      left: 32px;
+    }
+  }
+}
+
 .chat-message-avatar
   .chat-user-avatar.is-online
   .chat-user-avatar__container
@@ -95,9 +126,10 @@
   .chat-user-avatar.is-online
   .chat-user-avatar__container
   .avatar,
-.chat-channel-title__avatar
+.chat-message-creator__row
   .chat-user-avatar.is-online
-  .chat-user-avatar__container {
+  .chat-user-avatar__container
+  .avatar {
   box-shadow: none;
   border: none;
 }
@@ -109,9 +141,27 @@
 
 .chat-channel-title__avatar
   .chat-user-avatar.is-online
+  .chat-user-avatar__container::before,
+.chat-message-creator__row
+  .chat-user-avatar.is-online
   .chat-user-avatar__container::before {
-    border: 0px;
-    background-color: var(--success);
+  border: 0px;
+  background-color: var(--presence-online);
+}
+
+.chat-message-creator__row.-active
+  .chat-user-avatar.is-online
+  .chat-user-avatar__container::before {
+  border: 0px;
+  background-color: var(--presence-online);
+  box-shadow: 0px 0px 0px 2px var(--tertiary-very-low);
+}
+
+.chat-message-creator__row.-active
+  .chat-user-avatar
+  .chat-user-avatar__container::before {
+  box-shadow: 0px 0px 0px 2px var(--tertiary-very-low);
+  background-color: var(--tertiary-very-low);
 }
 
 .chat-message-avatar
@@ -121,7 +171,7 @@
   height: 8px;
   border: 2px solid var(--secondary);
   box-shadow: none;
-  background-color: var(--success);
+  background-color: var(--presence-online);
 }
 
 .chat-enabled .sidebar-section-link-prefix.active .prefix-image {
