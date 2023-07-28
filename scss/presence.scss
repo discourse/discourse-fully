@@ -96,6 +96,10 @@
   left: 24px;
 }
 
+.chat-message .chat-reply .chat-user-avatar .chat-user-avatar__container::before {
+  left: 16px;
+}
+
 .chat-message-thread-indicator .chat-user-avatar .chat-user-avatar__container::before {
   left: 20px;
 }
