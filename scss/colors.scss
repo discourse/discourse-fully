@@ -105,6 +105,11 @@
   color: var(--bright-text);
 }
 
+.discourse-no-touch .d-header-icons .btn-flat.btn-hover,
+.discourse-no-touch .d-header-icons .btn-flat:hover .d-icon {
+  color: unset;
+}
+
 .sidebar-section-link-wrapper {
   .sidebar-section-link.active,
   .sidebar-section-link--active {
