@@ -36,18 +36,6 @@
   }
 }
 
-.sidebar-theme-toggle__wrapper
-  .select-kit.single-select
-  .select-kit-header:not(.btn):focus,
-.sidebar-theme-toggle__wrapper
-  .select-kit.single-select
-  .select-kit-header:not(.btn):active,
-.sidebar-theme-toggle__wrapper
-  .select-kit.single-select
-  .select-kit-header:not(.btn):hover {
-  color: var(--active-text);
-}
-
 .sidebar-section-link-wrapper .sidebar-section-link,
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.span,
