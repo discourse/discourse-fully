@@ -45,6 +45,10 @@
   text-transform: uppercase;
 }
 
+.sidebar-section-wrapper[data-section-name="chat-dms"] .sidebar-section-header-text {
+  text-transform: none;
+}
+
 .hamburger-panel
   .revamped
   .sidebar-footer-wrapper
