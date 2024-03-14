@@ -19,3 +19,17 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
     max-width: unset;
   }
 }
+
+// 404 adjustments
+
+.not-found-container {
+  max-width: var(--d-max-width);
+}
+
+.no-ember {
+  .d-header .wrap > .contents {
+    display: flex;
+    max-width: var(--d-max-width);
+    margin: 0 auto;
+  }
+}
