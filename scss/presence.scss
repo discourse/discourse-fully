@@ -75,20 +75,23 @@
 }
 
 .chat-user-avatar .chat-user-avatar__container::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    border: 1px solid var(--primary-medium);
-    box-shadow: 0px 0px 0px 2px var(--secondary);
-    border-radius: 100%;
-    display: inline;
-    position: absolute;
-    bottom: 0px;
-    left: 21px;
-    background-color: var(--secondary);
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--primary-medium);
+  box-shadow: 0px 0px 0px 2px var(--secondary);
+  border-radius: 100%;
+  display: inline;
+  position: absolute;
+  bottom: 0px;
+  left: 21px;
+  background-color: var(--secondary);
 }
 
-.mobile-view .channels-list .chat-user-avatar .chat-user-avatar__container::before {
+.mobile-view
+  .channels-list
+  .chat-user-avatar
+  .chat-user-avatar__container::before {
   left: 32px;
 }
 
@@ -96,11 +99,16 @@
   left: 24px;
 }
 
-.chat-message .chat-reply .chat-user-avatar .chat-user-avatar__container::before {
+.chat-message
+  .chat-reply
+  .chat-user-avatar
+  .chat-user-avatar__container::before {
   left: 16px;
 }
 
-.chat-message-thread-indicator .chat-user-avatar .chat-user-avatar__container::before {
+.chat-message-thread-indicator
+  .chat-user-avatar
+  .chat-user-avatar__container::before {
   left: 20px;
 }
 
