@@ -1,5 +1,5 @@
 {
-  "about_url": null,
+  "about_url": "https://meta.discourse.org/t/fully-a-full-width-discourse-theme/262833",
   "license_url": null,
   "components": [
     "https://github.com/discourse/discourse-full-width-component.git",
