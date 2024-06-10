@@ -1,11 +1,11 @@
 {
-  "about_url": null,
+  "about_url": "https://meta.discourse.org/t/fully-a-full-width-discourse-theme/262833",
   "license_url": null,
   "components": [
     "https://github.com/discourse/discourse-full-width-component.git",
     "https://github.com/discourse/discourse-color-scheme-toggle.git"
   ],
-  "name": "Fully",
+  "name": "Fully Theme",
   "color_schemes": {
   }
 }
