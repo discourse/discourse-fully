@@ -1,91 +1,66 @@
+// hide default presence indicator
+.chat-enabled .sidebar-section-link-prefix.active .prefix-image {
+  box-shadow: none;
+  border-radius: var(--d-border-radius);
+}
+
+.chat-user-avatar.is-online .chat-user-avatar__container .avatar {
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+// base for custom presence indicator
 .sidebar-section-link-prefix.image::before {
   content: "";
   width: 6px;
   height: 6px;
-  box-shadow: 0px 0px 0px 2px var(--sidebar-color);
-  border: 1px solid var(--dimmed-text);
+  border: 1px solid transparent;
   border-radius: 100%;
   display: inline;
   position: absolute;
   bottom: 3px;
   left: calc(var(--d-sidebar-section-link-prefix-width) + 3px);
-  background-color: var(--sidebar-color);
+  background-color: transparent;
 }
 
 .sidebar-section-link:hover .sidebar-section-link-prefix.image.active::before {
   box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
 }
 
-.sidebar-section-link--active {
-  .sidebar-section-link-prefix.image.active::before {
-    box-shadow: 0px 0px 0px 2px var(--tertiary) !important;
-    border: 1px solid #ffff !important;
-    border-radius: 100%;
-    display: inline;
-    position: absolute;
-    bottom: 3px;
-    left: calc(var(--d-sidebar-section-link-prefix-width) + 3px);
-    background-color: #ffff !important;
-  }
-  &:hover .sidebar-section-link-prefix.image.active::before {
-    box-shadow: 0px 0px 0px 2px var(--sidebar-hover) !important;
-    background-color: var(--presence-online) !important;
-    border-color: var(--presence-online) !important;
-  }
-
-  .sidebar-section-link-prefix.image::before {
-    box-shadow: 0px 0px 0px 2px var(--tertiary);
-    border: 1px solid var(--sidebar-color);
-    background-color: var(--tertiary);
-  }
-  &:hover .sidebar-section-link-prefix.image::before {
-    box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
-    background-color: var(--sidebar-hover);
-    border-color: var(--bright-text);
-  }
-}
-
 .sidebar-section-link {
+  &.sidebar-section-link--active {
+    .sidebar-section-link-prefix.image.active::before {
+      box-shadow: 0px 0px 0px 2px var(--tertiary);
+      border: 1px solid #ffff;
+      background-color: #ffff;
+    }
+    &:hover .sidebar-section-link-prefix.image.active::before {
+      box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
+      background-color: var(--presence-online);
+      border-color: var(--presence-online);
+    }
+  }
+
   .sidebar-section-link-prefix.image.active::before {
     box-shadow: 0px 0px 0px 2px var(--sidebar-color);
     border: 1px solid var(--presence-online);
-    border-radius: 100%;
-    display: inline;
-    position: absolute;
-    bottom: 3px;
-    left: calc(var(--d-sidebar-section-link-prefix-width) + 3px);
     background-color: var(--presence-online);
   }
   &:hover .sidebar-section-link-prefix.image.active::before {
     box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
   }
-  &:hover .sidebar-section-link-prefix.image::before {
-    box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
-  }
-}
-
-.chat-enabled .sidebar-section-link-prefix.active .prefix-image {
-  box-shadow: none;
-}
-
-.chat-user-avatar.is-online .chat-user-avatar__container .avatar {
-  box-shadow: 0px 0px 0px 0px;
-  border: 1px solid transparent;
-  padding: 0;
 }
 
 .chat-user-avatar .chat-user-avatar__container::before {
   content: "";
   width: 5px;
   height: 5px;
-  border: 1px solid var(--primary-medium);
-  box-shadow: 0px 0px 0px 2px var(--secondary);
   border-radius: 100%;
   display: inline;
   position: absolute;
   bottom: 0px;
   left: 21px;
-  background-color: var(--secondary);
 }
 
 .mobile-view
@@ -113,6 +88,7 @@
 }
 
 .chat-user-avatar.is-online .chat-user-avatar__container::before {
+  box-shadow: 0px 0px 0px 2px var(--secondary);
   background-color: var(--presence-online);
   border: 1px solid transparent;
 }
