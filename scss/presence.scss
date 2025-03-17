@@ -24,31 +24,29 @@
   background-color: transparent;
 }
 
-.sidebar-section-link:hover .sidebar-section-link-prefix.image.active::before {
-  box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
-}
-
 .sidebar-section-link {
   &.sidebar-section-link--active {
     .sidebar-section-link-prefix.image.active::before {
-      box-shadow: 0px 0px 0px 2px var(--tertiary);
+      box-shadow: 0 0 0 2px var(--tertiary);
       border: 1px solid #ffff;
       background-color: #ffff;
     }
+
     &:hover .sidebar-section-link-prefix.image.active::before {
-      box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
+      box-shadow: 0 0 0 2px var(--sidebar-hover);
       background-color: var(--presence-online);
       border-color: var(--presence-online);
     }
   }
 
   .sidebar-section-link-prefix.image.active::before {
-    box-shadow: 0px 0px 0px 2px var(--sidebar-color);
+    box-shadow: 0 0 0 2px var(--sidebar-color);
     border: 1px solid var(--presence-online);
     background-color: var(--presence-online);
   }
+
   &:hover .sidebar-section-link-prefix.image.active::before {
-    box-shadow: 0px 0px 0px 2px var(--sidebar-hover);
+    box-shadow: 0 0 0 2px var(--sidebar-hover);
   }
 }
 
@@ -59,7 +57,7 @@
   border-radius: 100%;
   display: inline;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 21px;
 }
 
@@ -88,13 +86,13 @@
 }
 
 .chat-user-avatar.is-online .chat-user-avatar__container::before {
-  box-shadow: 0px 0px 0px 2px var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
   background-color: var(--presence-online);
   border: 1px solid transparent;
 }
 
 .is-online .avatar {
-  box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0 0 0 0;
   border: 1px solid transparent;
 }
 

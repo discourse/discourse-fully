@@ -31,6 +31,7 @@
   .sidebar-section-link-hover
   .sidebar-section-hover-button:focus {
   background: transparent;
+
   .d-icon {
     color: var(--bright-text);
   }
@@ -55,10 +56,10 @@
   background: unset;
 }
 
-.sidebar-footer-wrapper .sidebar-footer-container:before,
+.sidebar-footer-wrapper .sidebar-footer-container::before,
 .sidebar-hamburger-dropdown
   .sidebar-footer-wrapper
-  .sidebar-footer-container:before {
+  .sidebar-footer-container::before {
   background: linear-gradient(
     to bottom,
     rgba(59, 59, 59, 0),
@@ -103,9 +104,11 @@
   .sidebar-section-link--active {
     color: var(--active-text);
     background-color: var(--tertiary);
+
     &:hover {
       background-color: var(--sidebar-hover);
       color: var(--primary);
+
       .sidebar-section-link-prefix.icon {
         color: var(--primary);
       }

@@ -15,13 +15,13 @@ img.avatar {
 
 body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
   grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr);
+
   #main-outlet {
     max-width: unset;
   }
 }
 
 // 404 adjustments
-
 .not-found-container {
   max-width: var(--d-max-width);
 }
