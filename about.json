@@ -6,5 +6,6 @@
   ],
   "name": "Fully Theme",
   "color_schemes": {
-  }
+  },
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
