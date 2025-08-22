@@ -33,3 +33,9 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
     margin: 0 auto;
   }
 }
+
+.sidebar-section-link-wrapper
+  .sidebar-section-link.active
+  .sidebar-section-link-suffix.icon.unread svg {
+    color: inherit;
+}
