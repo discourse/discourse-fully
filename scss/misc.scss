@@ -36,6 +36,7 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
 
 .sidebar-section-link-wrapper
   .sidebar-section-link.active
-  .sidebar-section-link-suffix.icon.unread svg {
-    color: inherit;
+  .sidebar-section-link-suffix.icon.unread
+  svg {
+  color: inherit;
 }
